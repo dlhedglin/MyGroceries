@@ -24,6 +24,15 @@ int main()
         getline(cin,item);
         list.push_back(item);
     }
+    else{
+      if(list.size() == 0){
+        cout<< "there are no items on the list."<<endl;
+        return 0;
+      }
+      for(int i = 0; i < list.size(); i++){
+        cout<<"["<<i+1<<"] "<<list[i]<<endl;
+      }
+    }
   }while( input != 'q' && input != 'Q' );
     
   return 0;
